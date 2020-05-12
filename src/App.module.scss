@@ -1,0 +1,32 @@
+.nav{
+  background-color: #324157;
+  .width{
+    width: 1024px;
+    margin: 0 auto;
+    .logo{
+      user-select:none;
+      float: left;
+      font-size: 24px;
+      line-height: 60px;
+      color:#20a0ff;
+      padding-left:12px;
+      margin-right: 60px;
+    }
+    .hover:hover{
+      border-bottom: 5px solid #20a0ff;
+    }
+  }
+}
+.center{
+  width: 1024px;
+  margin: 10px auto 0 auto;
+  min-height: 800px;
+}
+.login:hover{
+  border-bottom: 5px solid transparent !important;
+  color:#20a0ff !important;
+}
+.login{
+  color: #324157 !important;
+  float: right !important;
+}

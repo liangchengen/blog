@@ -1,0 +1,22 @@
+.title{
+  padding: 10px 0;
+  height: 36px;
+  background-color: #475669;
+  .input{
+    width: 600px;
+    margin-left: 20px;
+    display: inline-block;
+  }
+  .button{
+    margin-left: 30px;
+    font-size: 18px;
+  }
+}
+.body{
+  background-color: #FFFFFF;
+  overflow: hidden;
+  .text{
+    resize:none;
+    width: 100%;
+  }
+}
