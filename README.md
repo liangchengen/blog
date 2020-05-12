@@ -1,5 +1,5 @@
-## 总结
-自己试着弄个博客，结果吗？失败了，后端JSON序列化的一些东西出问题，也不想改了，搭了个开源的博客
+## 说明
+某人的很简单的博客前端代码
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
