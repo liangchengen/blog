@@ -30,7 +30,7 @@ class App extends Component {
 
   componentWillMount(){
     if(this.state.signIn === null){
-      Axios.get('http://localhost:3000/getuser')
+      Axios.get('/api/getuser')
       .then((res)=>{
         this.setState({
           signIn:res.data.signin

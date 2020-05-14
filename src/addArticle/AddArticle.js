@@ -33,7 +33,7 @@ class AddArticle extends Component {
     switch(n){
       case 1:
         if(this.state.title !== "" && this.state.value !== ""){
-          Axios.post('http://localhost:3000/addArticle',qs.stringify({
+          Axios.post('/api/addArticle',qs.stringify({
             title:this.state.title,
             data:encodeURIComponent(this.state.value).replace(/%/g, '+')
           }))

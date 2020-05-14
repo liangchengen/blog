@@ -20,7 +20,7 @@ class ArticleList extends Component {
     this.onCurrentChange = this.onCurrentChange.bind(this);
   }
   UNSAFE_componentWillMount() {
-    Axios.get('http://localhost:3000/articlelist?pages='+this.state.currentPage)
+    Axios.get('/api/articlelist?pages='+this.state.currentPage)
     .then((res) => {
       this.setState({
         list: res.data.data,
@@ -36,7 +36,7 @@ class ArticleList extends Component {
     this.setState({
       currentPage:n
     })
-    Axios.get('http://localhost:3000/articlelist?pages='+ n)
+    Axios.get('/api/articlelist?pages='+ n)
     .then((res) => {
       this.setState({
         list: res.data.data

@@ -31,7 +31,7 @@ class Login extends Component {
   }
   onClick(){
     if(this.state.user !== "" && this.state.password !== ""){
-      Axios.post('http://localhost:3000/login',qs.stringify({
+      Axios.post('/api/login',qs.stringify({
       "name": this.state.user.trim(),
       "password": this.state.password.trim()
     }))

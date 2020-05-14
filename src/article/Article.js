@@ -16,7 +16,7 @@ class Article extends Component {
     this.onSpanClick = this.onSpanClick.bind(this)
   }
   componentWillMount(){
-    Axios.post('http://localhost:3000/article',qs.stringify({
+    Axios.post('/api/article',qs.stringify({
       id:this.props.match.params.id
     }))
     .then(req=>{
@@ -35,7 +35,7 @@ class Article extends Component {
       this.setState({
         spancolor:"#20a0ff"
       })
-      Axios.post('http://localhost:3000/setPraiseNumber',qs.stringify({
+      Axios.post('/api/setPraiseNumber',qs.stringify({
         id:this.props.match.params.id
       }))
     }
